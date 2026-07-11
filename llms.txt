@@ -1,0 +1,20 @@
+# Airlogical
+
+> Aircraft management software for private and business aviation. One platform covering crew, certificates, operations, technical, safety, finance and compliance for private and business aviation. Built by the team behind Sealogical (fleet management since 2003).
+
+## Pages
+- [Home](https://www.airlogical.com/): What Airlogical is and the eight modules.
+- [Modules](https://www.airlogical.com/modules): The complete platform.
+- [Aircraft](https://www.airlogical.com/modules/aircraft): Aircraft Records & Airworthiness Software.
+- [Crew](https://www.airlogical.com/modules/crew): Aircraft Crew Management Software.
+- [Certificates](https://www.airlogical.com/modules/certificates): Aircraft & Crew Certificate Tracking Software.
+- [Operations](https://www.airlogical.com/modules/operations): Flight Operations & Trip Management Software.
+- [Technical](https://www.airlogical.com/modules/technical): Aircraft Maintenance Tracking & AD Compliance Software.
+- [Safety](https://www.airlogical.com/modules/safety): Aviation SMS Software (Safety Management System).
+- [Finance](https://www.airlogical.com/modules/finance): Aircraft Cost Tracking & Owner Statements Software.
+- [Compliance](https://www.airlogical.com/modules/compliance): Aviation Compliance Software & Live Forecast.
+- [Pricing](https://www.airlogical.com/pricing): Per-aircraft pricing, unlimited users.
+- [About](https://www.airlogical.com/about): Company and heritage.
+- [FAQ](https://www.airlogical.com/faq): Common questions.
+- [What is aircraft management software?](https://www.airlogical.com/blog/what-is-aircraft-management-software): A plain-English guide to what aircraft management software does, who needs it, and what to look for — for private and business aviation.
+- [Flight-time limitations (FTL) explained](https://www.airlogical.com/blog/flight-time-limitations-ftl-explained): What flight-time limitations are, why they matter, and how software helps operators keep crew legal — a plain-English guide for private and business aviation.
