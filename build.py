@@ -322,6 +322,7 @@ def page(path, title, desc, body, *, canonical, extra_ld=None, og_type="website"
 {header()}
 {body}
 {footer()}
+<script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
 </body>
 </html>
 '''
