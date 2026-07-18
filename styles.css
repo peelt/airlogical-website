@@ -62,6 +62,11 @@ h2.sec{font-size:32px;margin:6px 0 10px}
 .module h3{font-size:17px;display:flex;align-items:center;gap:8px}
 .module .dot{width:9px;height:9px;border-radius:50%}
 .module p{font-size:13.5px;color:#3a4853;margin-top:8px}
+.capgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}
+.cap-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px}
+.cap-card h3{font-size:16px;display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.cap-card .dot{width:9px;height:9px;border-radius:50%;flex:0 0 auto}
+.cap-card p{font-size:14px;color:#3a4853}
 .band-soft{background:var(--soft)}
 .reports{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
 .ticks{list-style:none;display:grid;gap:10px;margin-top:16px}
@@ -114,8 +119,8 @@ footer{background:var(--navy);color:#cfe0ea}
 .foot-note{padding:0 0 28px;font-family:"Ubuntu Mono",monospace;font-size:12px;color:#7fa0b2}
 @media(max-width:900px){
  .hero .grid,.reports,.footcols{grid-template-columns:1fr}
- .modules,.steps,.pricegrid,.postgrid{grid-template-columns:1fr 1fr}
+ .modules,.steps,.pricegrid,.postgrid,.capgrid{grid-template-columns:1fr 1fr}
  nav.main{display:none}
  .hero h1{font-size:40px}h1{font-size:34px}h2.sec{font-size:26px}
 }
-@media(max-width:560px){.modules,.steps,.pricegrid,.postgrid,.mgrid{grid-template-columns:1fr}}
+@media(max-width:560px){.modules,.steps,.pricegrid,.postgrid,.mgrid,.capgrid{grid-template-columns:1fr}}

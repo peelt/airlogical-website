@@ -27,105 +27,8 @@ UPDATED = "2026-07-11"
 
 NAVY = "#034566"; ORANGE = "#F6881C"; TEAL = "#47D5C6"
 
-# ── module data (used on home grid + per-module pages) ───────────────────────
-MODULES = [
-    dict(slug="aircraft", name="Aircraft", color="#FAA52A",
-         title="Aircraft Records & Airworthiness Software",
-         kw="aircraft records software",
-         lead="Airlogical keeps the complete aircraft record in one place — particulars, airworthiness status, key documents and the dashboard your team opens first — so the state of every tail is clear at a glance.",
-         bullets=["Aircraft particulars, registration and class",
-                  "Airworthiness status, CofR and ARC tracking",
-                  "Grounded / AOG status surfaced across the fleet",
-                  "Key documents attached to the aircraft record"],
-         faqs=[("What does the Aircraft module do?",
-                "It holds each aircraft's particulars, airworthiness status and key documents, and is the dashboard your flight department opens first to see what needs attention."),
-               ("Does it track airworthiness and ARC expiry?",
-                "Yes. Certificate of Registration, Airworthiness Review Certificate and related expiries are tracked and surfaced in the compliance forecast before they lapse.")]),
-    dict(slug="crew", name="Crew", color="#B161CF",
-         title="Aircraft Crew Management Software",
-         kw="crew management software",
-         lead="Airlogical is crew management software for aviation: profiles, licences and ratings, medicals, recency and currency, documents, and per-aircraft permissions — the complete crew record in one place.",
-         bullets=["Licences, ratings and type ratings with expiry tracking",
-                  "Medicals and recency/currency (incl. 90-day landing recency)",
-                  "Flight-time limitation (FTL) duty tracking",
-                  "Crew documents and per-aircraft access permissions"],
-         faqs=[("How does Airlogical track flight-time limitations (FTL)?",
-                "Airlogical records duty periods and flight time and evaluates them against the applicable FTL rules, flagging crew approaching or exceeding limits at the point of assignment and across the schedule."),
-               ("Does it track licence and medical expiry?",
-                "Yes. Licences, ratings, type ratings and medicals are tracked with expiry dates and surfaced in the compliance forecast and on each crew profile.")]),
-    dict(slug="certificates", name="Certificates", color="#E7C948",
-         title="Aircraft & Crew Certificate Tracking Software",
-         kw="certificate tracking software",
-         lead="Airlogical puts aircraft, crew and company certificates in one register with automatic expiry tracking, document storage and reminders — so nothing lapses by surprise.",
-         bullets=["One register for aircraft, crew and company certificates",
-                  "Automatic expiry tracking with reminders",
-                  "Secure document storage against each certificate",
-                  "Expiring-soon and overdue views for audit readiness"],
-         faqs=[("What certificates can Airlogical track?",
-                "Aircraft, crew and company certificates — from Certificates of Registration and insurance to crew licences, ratings and medicals — all in one register with expiry tracking."),
-               ("Does it send expiry reminders?",
-                "Yes. Certificates approaching expiry are surfaced in the compliance forecast and reminders so they can be renewed before they lapse.")]),
-    dict(slug="operations", name="Operations", color="#3B82F6",
-         title="Flight Operations & Trip Management Software",
-         kw="flight operations software",
-         lead="Airlogical manages every trip end to end — planning and dispatch, handling and permits, in-flight services, and a printable trip pack for the crew — with each leg checked for readiness before it flies.",
-         bullets=["Trip and leg planning with dispatch workflow",
-                  "Handling, permits and in-flight services per leg",
-                  "Pre-departure readiness checks (crew, aircraft, FTL, permits)",
-                  "Printable trip pack for the crew"],
-         faqs=[("What is trip management in Airlogical?",
-                "It's the end-to-end handling of a trip — planning legs, assigning crew, arranging handling and permits, and producing a trip pack — with a readiness check that flags anything that would stop a leg flying."),
-               ("Does it check crew eligibility for a leg?",
-                "Yes. Each leg is checked for crew eligibility (type rating, medical, landing recency), aircraft status, services and permits before departure.")]),
-    dict(slug="technical", name="Technical", color="#2FB37E",
-         title="Aircraft Maintenance Tracking & AD Compliance Software",
-         kw="aircraft maintenance tracking software",
-         lead="Airlogical is the single source of truth for engineering: the maintenance log, life-limited components, the Airworthiness Directive (AD) compliance register and open defects.",
-         bullets=["Maintenance log and scheduled tasks",
-                  "Life-limited component tracking",
-                  "Airworthiness Directive (AD) compliance register",
-                  "Defects and deferred-defect (MEL) management"],
-         faqs=[("Does Airlogical track Airworthiness Directives?",
-                "Yes. Airlogical maintains an AD compliance register so you can show which directives apply, how they were complied with, and what remains open."),
-               ("Can it track life-limited components?",
-                "Yes. Life-limited components are tracked with their limits and remaining life so replacements are planned before they're due.")]),
-    dict(slug="safety", name="Safety", color="#E2453C",
-         title="Aviation SMS Software (Safety Management System)",
-         kw="aviation SMS software",
-         lead="Airlogical is an aviation safety management system (SMS) crew actually use — report forms, occurrence reports, flight-ops plans and corrective actions, all tracked to closure.",
-         bullets=["SMS report forms and occurrence reporting",
-                  "Hazard log and risk assessments",
-                  "Corrective actions tracked to closure",
-                  "Read-and-acknowledge for manuals and safety notices"],
-         faqs=[("What is an aviation SMS?",
-                "A Safety Management System is the structured way an operator identifies hazards, reports occurrences and manages risk. Airlogical provides the forms, hazard log, risk assessments and corrective-action tracking crew use day to day."),
-               ("Does it record who acknowledged a manual or notice?",
-                "Yes. Read-and-acknowledge is tracked per crew member and per manual revision, and the register is exportable for an oversight inspection.")]),
-    dict(slug="finance", name="Finance", color="#3D5AC9",
-         title="Aircraft Cost Tracking & Owner Statements Software",
-         kw="aircraft cost tracking software",
-         lead="Airlogical handles aircraft finance properly — standing costs, per-leg costs, budgets, pre-trip cost estimates and multi-currency owner statements — built for aviation, not adapted from generic accounting.",
-         bullets=["Standing costs and per-leg cost lines",
-                  "Budgets and pre-trip cost estimates",
-                  "Multi-currency owner statements",
-                  "Owner portal for transparent reporting"],
-         faqs=[("Can aircraft owners see their costs?",
-                "Yes. Airlogical produces owner-grade statements and a secure owner portal, plus pre-trip cost estimates so owners can see what a trip will cost before it flies."),
-               ("Is it multi-currency?",
-                "Yes. Costs and owner statements support multiple currencies, with base-currency reporting for the operator.")]),
-    dict(slug="compliance", name="Compliance", color="#12A5CE",
-         title="Aviation Compliance Software & Live Forecast",
-         kw="aviation compliance software",
-         lead="Airlogical gives you a single live forecast of everything coming due across every aircraft and crew member — certificates, checks, maintenance and training — ranked by what needs attention first.",
-         bullets=["One forecast across all aircraft and crew",
-                  "Certificates, checks, maintenance and training in one view",
-                  "Ranked by urgency — overdue and due-soon first",
-                  "Exportable, audit-ready compliance reporting"],
-         faqs=[("What does the compliance forecast show?",
-                "It shows everything coming due — certificate expiries, crew checks, maintenance and training — across the whole fleet in one ranked list, so nothing expires by surprise."),
-               ("Is it useful for audits?",
-                "Yes. The forecast and the underlying registers give an auditor a clear, current picture and an exportable history of what happened and when.")]),
-]
+# ── module data (rich per-module content) ───────────────────────────────────
+from content_modules import MODULES  # noqa: E402
 
 # ── site-wide FAQ (home + /faq) ──────────────────────────────────────────────
 SITE_FAQS = [
@@ -452,11 +355,30 @@ def build_modules_index():
          extra_ld=[breadcrumb_ld([("Home", "/"), ("Modules", "/modules")])])
 
 
+def clip(text, n=155):
+    """Trim to a word boundary for meta descriptions."""
+    t = " ".join(text.split())
+    if len(t) <= n:
+        return t
+    return t[:n].rsplit(" ", 1)[0].rstrip(",.;:") + "…"
+
+
 def build_module(m):
+    intro = "".join(f"<p>{esc(x)}</p>" for x in m["intro"])
+    caps = "".join(
+        f'<div class="cap-card"><h3><span class="dot" style="background:{m["color"]}"></span>{esc(t)}</h3><p>{esc(d)}</p></div>'
+        for t, d in m["capabilities"])
+    steps = "".join(
+        f'<div class="step"><div class="n">{i + 1:02d}</div><h3>{esc(t)}</h3><p>{esc(d)}</p></div>'
+        for i, (t, d) in enumerate(m["how"]))
+    name_of = {o["slug"]: o["name"] for o in MODULES}
+    rel = "".join(
+        f'<a href="/modules/{s}" class="pill-link">{esc(name_of[s])}</a>'
+        for s in m.get("related", []) if s in name_of)
     others = "".join(
         f'<a href="/modules/{o["slug"]}" class="pill-link">{esc(o["name"])}</a>'
         for o in MODULES if o["slug"] != m["slug"])
-    bullets = "".join(f'<li><span class="tick">&#10003;</span> {esc(b)}</li>' for b in m["bullets"])
+
     body = f'''<section class="page-hero"><div class="wrap narrow">
   <nav class="crumbs mono"><a href="/">home</a> / <a href="/modules">modules</a> / {esc(m["name"].lower())}</nav>
   <div class="eyebrow" style="color:{m["color"]}">~ {esc(m["name"].lower())}</div>
@@ -464,22 +386,40 @@ def build_module(m):
   <p class="lead">{esc(m["lead"])}</p>
   <div class="cta"><a class="btn btn-navy" href="{APP}/signup">Try Now</a><a class="btn btn-outline" href="/pricing">Pricing</a></div>
 </div></section>
-<section><div class="wrap narrow">
-  <h2 class="sec">What the {esc(m["name"])} module covers</h2>
-  <ul class="ticks big">{bullets}</ul>
+
+<section><div class="wrap narrow prose">{intro}</div></section>
+
+<section class="band-soft"><div class="wrap">
+  <div class="center narrow"><div class="eyebrow">~ capabilities</div><h2 class="sec">What the {esc(m["name"])} module covers</h2></div>
+  <div class="capgrid">{caps}</div>
 </div></section>
+
+<section class="band-navy"><div class="wrap">
+  <div class="center narrow"><div class="eyebrow">~ how it works</div><h2 class="sec" style="color:#fff">How {esc(m["name"])} works</h2></div>
+  <div class="steps">{steps}</div>
+</div></section>
+
+<section><div class="wrap narrow prose">
+  <h2 class="sec">Who it&#39;s for</h2>
+  <p>{esc(m["who"])}</p>
+</div></section>
+
 {faq_html(m["faqs"], "Questions about " + m["name"])}
+
 <section><div class="wrap narrow center">
-  <div class="eyebrow">~ explore</div><h2 class="sec">Other modules</h2>
+  <div class="eyebrow">~ works with</div><h2 class="sec">Related modules</h2>
+  <div class="pill-links">{rel}</div>
+  <p class="sub center" style="margin:26px auto 0">Every module</p>
   <div class="pill-links">{others}</div>
 </div></section>
 {cta_band()}'''
-    page(f"modules/{m['slug']}.html", m["title"],
-         m["lead"][:155],
+
+    page(f"modules/{m['slug']}.html", m["title"], clip(m["lead"]),
          body, canonical=f"{BASE}/modules/{m['slug']}",
          extra_ld=[software_ld(),
                    faq_ld(m["faqs"]),
-                   breadcrumb_ld([("Home", "/"), ("Modules", "/modules"), (m["name"], f"/modules/{m['slug']}")])])
+                   breadcrumb_ld([("Home", "/"), ("Modules", "/modules"),
+                                  (m["name"], f"/modules/{m['slug']}")])])
 
 
 def build_pricing():
@@ -726,6 +666,11 @@ h2.sec{font-size:32px;margin:6px 0 10px}
 .module h3{font-size:17px;display:flex;align-items:center;gap:8px}
 .module .dot{width:9px;height:9px;border-radius:50%}
 .module p{font-size:13.5px;color:#3a4853;margin-top:8px}
+.capgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}
+.cap-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px}
+.cap-card h3{font-size:16px;display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.cap-card .dot{width:9px;height:9px;border-radius:50%;flex:0 0 auto}
+.cap-card p{font-size:14px;color:#3a4853}
 .band-soft{background:var(--soft)}
 .reports{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
 .ticks{list-style:none;display:grid;gap:10px;margin-top:16px}
@@ -778,11 +723,11 @@ footer{background:var(--navy);color:#cfe0ea}
 .foot-note{padding:0 0 28px;font-family:"Ubuntu Mono",monospace;font-size:12px;color:#7fa0b2}
 @media(max-width:900px){
  .hero .grid,.reports,.footcols{grid-template-columns:1fr}
- .modules,.steps,.pricegrid,.postgrid{grid-template-columns:1fr 1fr}
+ .modules,.steps,.pricegrid,.postgrid,.capgrid{grid-template-columns:1fr 1fr}
  nav.main{display:none}
  .hero h1{font-size:40px}h1{font-size:34px}h2.sec{font-size:26px}
 }
-@media(max-width:560px){.modules,.steps,.pricegrid,.postgrid,.mgrid{grid-template-columns:1fr}}
+@media(max-width:560px){.modules,.steps,.pricegrid,.postgrid,.mgrid,.capgrid{grid-template-columns:1fr}}
 """
 
 
